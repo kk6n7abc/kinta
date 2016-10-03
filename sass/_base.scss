@@ -1,0 +1,52 @@
+@import "item";
+html{
+font-size: 16px;
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+body{
+	overflow-x: hidden;
+	font-family: "メイリオ", sans-serif, "Yu Gothic", YuGothic, Hiragino Kaku Gothic ProN;
+	-webkit-text-size-adjust: 100%;
+	font-size: 16px;
+	color: #333;
+	@media screen and (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+img{
+	line-height: 0;
+	vertical-align: bottom;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+a{
+	text-decoration: none;
+}
+hr{
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+@media screen and (max-width: 767px) {
+	.pc{
+		display: none!important;	
+	}
+
+}
+@media screen and (min-width: 768px) {
+	.sp{
+		display: none!important;	
+	}
+}
+
+
+
