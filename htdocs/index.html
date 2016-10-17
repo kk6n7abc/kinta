@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title></title> 
+<title></title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -17,25 +17,38 @@
 <link rel="apple-touch-icon" href="">
 <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/flexslider.css">
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/common.js"></script>
+<script src="/assets/js/jquery.flexslider.js"></script>
+<script>
+	$(window).load(function() {
+	  $('.slider').flexslider({
+	    animation: "slide",
+	    slideshow: true,
+	    slideshowSpeed: 4000,
+	    pasneOnHover: false,
+	    pauseOnAction: false
+	  });
+	});
+</script>
 </head>
 <body id="content">
 	<header>
 		<div class="header-inner clearfix">
 			<div class="head-left-block">
-				<h1><img src="/assets/img/logo_01_pc" alt="ちゃっかり勤太くん"></h1>
+				<h1><a href="/"><img src="/assets/img/logo_01_pc" alt="ちゃっかり勤太くん"></a></h1>
 				<p>ｂｙ株式会社エイ・アイ・エス</p>
 			</div>
 			<div class="head-right-block clearfix pc">
 				<div class="head-right-block-inner">
 					<ul class="clearfix">
-						<li><a href="#">特徴</a></li>
-						<li><a href="#">事例</a></li>
-						<li><a href="#">機能一覧</a></li>
-						<li><a href="#">よくある質問</a></li>
+						<li><a href="/tokucyo/">特徴</a></li>
+						<li><a href="/jirei/">事例</a></li>
+						<li><a href="/kinou/">機能一覧</a></li>
+						<li><a href="/shitsumon/">よくある質問</a></li>
 					</ul>
-					<p class="contact-btn"><a href="#">お問い合わせ(無料)</a></p>
+					<p class="contact-btn"><a href="/toiawase/">お問い合わせ(無料)</a></p>
 					</div>
 			</div>
 			<div class="menu_btn sp">
@@ -43,27 +56,40 @@
 			</div>
 			<div class="nav-menu sp">
 				<ul>
-					<li><a href="#">&#x25B6;TOP</a></li>
-					<li><a href="#">&#x25B6;特徴紹介</a></li>
-					<li><a href="#">&#x25B6;導入事例</a></li>
-					<li><a href="#">&#x25B6;機能一覧</a></li>
-					<li><a href="#">&#x25B6;よくある質問</a></li>
+					<li><a href="/">&#x25B6;TOP</a></li>
+					<li><a href="/tokucyo/">&#x25B6;特徴紹介</a></li>
+					<li><a href="/jirei/">&#x25B6;導入事例</a></li>
+					<li><a href="/kinou/">&#x25B6;機能一覧</a></li>
+					<li><a href="/shitsumon">&#x25B6;よくある質問</a></li>
 				</ul>
-				<p class="contact-btn-02"><a href="#">お問い合わせ(無料)</a></p>
-				<p class="tel-btn-02"><a href="tel:03-5833-8808">03-5833-8808<br>
-				【営業時間】平日9:00~18:00</a></p>
+				<p class="contact-btn-02"><a href="/toiawase/">お問い合わせ(無料)</a></p>
+				<p class="tel-btn-02"><a href="tel:03-5833-8808"><img src="/assets/img/sp/sp_menu_tel_btn_01.png" alt=""></a></p>
 			</div>
 		</div>
 	</header>
 	<div id="top-content">
 		<div id="main-visual" class="pc">
-			<div class="main-visual-inner"><img src="/img/main_visual_01.jpg" alt=""></div>
+			<div class="slider">
+				<ul class="slides">
+					<li><img src="/img/mainvisual_01.png" alt=""></li>
+					<li><img src="/img/mainvisual_02.png" alt=""></li>
+					<li><img src="/img/mainvisual_03.png" alt=""></li>
+				</ul>
+				<img src="/img/slider_parts.png" alt="多店舗運営・多拠点経営における時間とコストの無駄をクラウド勤怠管理システムで解決します 1人あたり月額200円～！ちゃっかり勤太くん の充実した機能とサポートが、勤怠管理やシフト管理を効率化します。 総務省後援 ASP・ SaaSクラウドアワード ４年連続受賞！ ベストブレイク賞 ベスト連携賞 基幹業務系グランプリ 海外展開賞" class="slider-parts">
+			</div>
 		</div>
 		<div id="sp-main-visual" class="sp">
-			<img src="/img/sp/sp_main_visual_01.jpg" alt="">
+			<div class="slider">
+				<ul class="slides">
+					<li><img src="/img/sp/sp_main_visual_01.png" alt=""></li>
+					<li><img src="/img/sp/sp_main_visual_02.png" alt=""></li>
+					<li><img src="/img/sp/sp_main_visual_03.png" alt=""></li>
+				</ul>
+				<img src="/img/sp/sp_slider_parts.png" alt="総務省後援 ASP・ SaaSクラウドアワード ４年連続受賞！ ベストブレイク賞 ベスト連携賞 基幹業務系グランプリ 海外展開賞" class="slider-parts">
+			</div>
 		</div>
 		<section class="b-1">
-			<h2><img src="/img/top_text_01.png" alt=""></h2>
+			<h2>画面の前の店舗運営者の方！<br>このようなことでお困りではないですか？？</h2>
 			<hr class="top-border-01">
 			<div class="b-innerbox">
 				<ul class="clearfix pc">
@@ -74,7 +100,7 @@
 				<p class="sp_circle sp"><img src="/img/sp/sp_top_block_circle_01.png" alt=""></p>
 				<p class="b-1-text-01">その悩み…<br clear="sp"><span>ちゃっかり勤太くん</span>が解決します！</p>
 				<p class="b-1-text-02">(導入後も継続サポートで安心です)</p>
-				<p class="contact-btn-01"><a href="#">お問い合わせ(無料)</a></p>
+				<p class="contact-btn-01"><a href="/toiawase/">お問い合わせ(無料)</a></p>
 			</div>
 		</section>
 		<section class="b-2">
@@ -88,7 +114,7 @@
 				</div>
 				<p class="text-item-01"><img src="/img/top_item_01.png" alt="それが驚きの・・・"></p>
 				<p class="b-2-text-01">１人あたり月額<span>200</span>円～</p>
-				<p class="top-detail-btn"><a href="#">詳しい特徴<span>＞</span></a></p>
+				<p class="top-detail-btn"><a href="tokucyo">詳しい特徴<span> ＞</span></a></p>
 			</div>
 		</section>
 		<section class="b-3">
@@ -126,20 +152,19 @@
 			<div class="b-innerbox">
 				<div class="logo-box">
 					<ul class="clearfix">
-						<li><img src="/img/top_company_img_01.png"></li>
-						<li><img src="/img/top_company_img_02.png"></li>
-						<li><img src="/img/top_company_img_03.png"></li>
-						<li><img src="/img/top_company_img_04.png"></li>
-						<li><img src="/img/top_company_img_05.png"></li>
-						<li><img src="/img/top_company_img_06.png"></li>
-						<li><img src="/img/top_company_img_07.png"></li>
-						<li><img src="/img/top_company_img_08.png"></li>
-						<li><img src="/img/top_company_img_09.png"></li>
-						<li><img src="/img/top_company_img_10.png"></li>
+						<li><img src="/img/top_company_img_02.png" alt="株式会社日本テレメッセージグルー"></li>
+						<li><img src="/img/top_company_img_03.png" alt="株式会社東日製作所"></li>
+						<li><img src="/img/top_company_img_04.png" alt="三菱商事金属グループ"></li>
+						<li><img src="/img/top_company_img_05.png" alt="株式会社ビーエス・ジェイ"></li>
+						<li><img src="/img/top_company_img_06.png" alt="東京交通サービス株式会社"></li>
+						<li><img src="/img/top_company_img_07.png" alt="ドンク"></li>
+						<li><img src="/img/top_company_img_08.png" alt="株式会社カークレド"></li>
+						<li><img src="/img/top_company_img_09.png" alt="株式会社高砂"></li>
+						<li><img src="/img/top_company_img_10.png" alt="ＣＳリレーションズ株式会社"></li>
 					</ul>
 				</div>
-				<p class="top-detail-btn"><a href="#">詳しい導入事例＞</a></p>
-				<p class="contact-btn-01"><a href="#">お問い合わせ(無料)</a></p>
+				<p class="top-detail-btn"><a href="/jirei/">詳しい導入事例<span> ＞</span></a></p>
+				<p class="contact-btn-01"><a href="/toiawase/">お問い合わせ(無料)</a></p>
 			</div>
 		</section>
 		<section class="b-5">
@@ -149,8 +174,8 @@
 				<ul class="clearfix">
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_01.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_01.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_01.png" class="pc" alt="様々な出退勤入力方式">
+							<img src="/img/sp/sp_top_block_item_01.png" class="sp" alt="様々な出退勤入力方式"><br>
 							様々な出退勤入力方式
 							</p>
 						</div>
@@ -158,8 +183,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_02.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_02.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_02.png" alt="導入後も安心の継続サポート" class="pc">
+							<img src="/img/sp/sp_top_block_item_02.png" alt="導入後も安心の継続サポート" class="sp"><br>
 							導入後も安心の<br>継続サポート
 							</p>
 						</div>
@@ -167,8 +192,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_03.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_03.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_03.png" alt="画面がシンプルでわかりやすい！" class="pc">
+							<img src="/img/sp/sp_top_block_item_03.png" alt="画面がシンプルでわかりやすい！" class="sp"><br>
 							画面がシンプルで<br>わかりやすい！
 							</p>
 						</div>
@@ -176,8 +201,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_04.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_04.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_04.png" alt="楽々シフト管理" class="pc">
+							<img src="/img/sp/sp_top_block_item_04.png" alt="楽々シフト管理" class="sp"><br>
 							楽々シフト管理
 							</p>
 						</div>
@@ -185,8 +210,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_05.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_05.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_05.png" alt="損益管理を実現" class="pc">
+							<img src="/img/sp/sp_top_block_item_05.png" alt="損益管理を実現" class="sp"><br>
 							損益管理を実現
 							</p>
 						</div>
@@ -194,8 +219,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_06.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_06.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_06.png" alt="効率的な有給や休暇管理" class="pc">
+							<img src="/img/sp/sp_top_block_item_06.png" alt="効率的な有給や休暇管理" class="sp"><br>
 							効率的な有給や<br>休暇管理
 							</p>
 						</div>
@@ -203,8 +228,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_07.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_07.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_07.png" alt="給与ソフトとも簡単連携" class="pc">
+							<img src="/img/sp/sp_top_block_item_07.png" alt="給与ソフトとも簡単連携" class="sp"><br>
 							給与ソフトとも簡単連携
 							</p>
 						</div>
@@ -212,8 +237,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_08.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_08.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_08.png" alt="グローバル対応" class="pc">
+							<img src="/img/sp/sp_top_block_item_08.png" alt="グローバル対応" class="sp"><br>
 							グローバル対応
 							</p>
 						</div>
@@ -221,8 +246,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_09.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_09.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_09.png" alt="高い信頼性と安全性" class="pc">
+							<img src="/img/sp/sp_top_block_item_09.png" alt="高い信頼性と安全性" class="sp"><br>
 							高い信頼性と安全性
 							</p>
 						</div>
@@ -230,8 +255,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_10.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_10.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_10.png" alt="お弁当・まかない注文機能" class="pc">
+							<img src="/img/sp/sp_top_block_item_10.png" alt="お弁当・まかない注文機能" class="sp"><br>
 							お弁当・まかない<br>注文機能
 							</p>
 						</div>
@@ -239,8 +264,8 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_11.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_11.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_11.png" alt="シフト取り込み機能" class="pc">
+							<img src="/img/sp/sp_top_block_item_11.png" alt="シフト取り込み機能" class="sp"><br>
 							シフト取り込み機能
 							</p>
 						</div>
@@ -248,16 +273,16 @@
 					</li>
 					<li>
 						<div class="item-box">
-							<p class="b-5-text-01"><img src="/img/top_block_item_12.png" alt="" class="pc">
-							<img src="/img/sp/sp_top_block_item_12.png" alt="" class="sp"><br>
+							<p class="b-5-text-01"><img src="/img/top_block_item_12.png" alt="多店舗からの応援対応" class="pc">
+							<img src="/img/sp/sp_top_block_item_12.png" alt="多店舗からの応援対応" class="sp"><br>
 							多店舗からの応援対応
 							</p>
 						</div>
 						<p class="b-5-text-02">他店舗からの応援による出退勤の打刻が可能。打刻した場所のデータも出力可能です。</p>
 					</li>
 				</ul>
-				<p class="top-detail-btn"><a href="#">詳しい機能</a></p>
-				<p class="contact-btn-01"><a href="#">お問い合わせ(無料)</a></p>
+				<p class="top-detail-btn"><a href="/kinou/">詳しい機能<span> ></span></a></p>
+				<p class="contact-btn-01"><a href="/toiawase/">お問い合わせ(無料)</a></p>
 			</div>
 		</section>
 		<section class="b-6">
@@ -287,7 +312,7 @@
 					<li class="b-7-text-03">給与ソフト<br>に連携</li>
 					<li class="b-7-text-04">勤怠<br>データ管理</li>
 				</ul>
-				<p><img src="img/sp/sp_top_block_back_01.png" alt="" class="sp"></p>
+				<p><img src="img/sp/sp_top_block_back_01.png" alt="データ収集 クラウドでデータ保存 給与ソフトに連携 勤怠データ管理" class="sp"></p>
 			</div>
 		</section>
 		<section class="b-8">
@@ -296,7 +321,7 @@
 			<div class="b-innerbox">
 				<p class="b-8-text-01">最後までご覧いただきまして、誠にありがとうございます。<br>弊社は東京と神戸に営業所がございますので、関東及び関西近県へのご訪問やデモを<span>無料</span>にて行っております。<br>もちろんご来社頂くこともできます（要予約）。<br>
 				遠方の場合も、リモートによるデモを実施しております。<br>その他、ご不明な点がございましたら<span>お気軽</span>にお問い合わせフォームかお電話にてご連絡下さい。</p>
-				<p class="contact-btn-01"><a href="#">お問い合わせ(無料)</a></p>
+				<p class="contact-btn-01"><a href="/toiawase/">お問い合わせ(無料)</a></p>
 				<p class="tel-btn-01 pc">03-5833-8808<span>【営業時間】<br class="pc">平日9:00~18:00</span></p>
 				<p class="tel-btn-01 sp"><a href="tel:0358338808">03-5833-8808<br><span>【営業時間】<br class="pc">平日9:00~18:00</span></a></p>
 			</div>
@@ -304,12 +329,12 @@
 	</div>
 	<footer>
 		<ul class="clearfix">
-			<li><a href="#">TOP</a></li>
-			<li><a href="#">特徴</a></li>
-			<li><a href="#">事例</a></li>
-			<li><a href="#">機能一覧</a></li>
-			<li><a href="#">よくある質問</a></li>
-			<li><a href="#">お問い合わせ</a></li>
+			<li><a href="/">TOP</a></li>
+			<li><a href="/tokucyo/">特徴</a></li>
+			<li><a href="/jirei/">事例</a></li>
+			<li><a href="/kinou/">機能一覧</a></li>
+			<li><a href="/jirei/">よくある質問</a></li>
+			<li><a href="/toiawase/">お問い合わせ</a></li>
 		</ul>
 		<p class="campany-name">株式会社エイ・アイ・エス</p>
 		<p class="copy">Copyright (C) AIS Co., Ltd. All Rights Reserved.</p>

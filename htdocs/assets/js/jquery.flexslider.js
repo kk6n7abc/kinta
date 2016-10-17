@@ -163,6 +163,7 @@
           if(!msGesture){
               slider.slides.on(eventType, function(e){
                 e.preventDefault();
+                slider.play();
                 var $slide = $(this),
                     target = $slide.index();
                 var posFromLeft = $slide.offset().left - $(slider).scrollLeft(); // Find position of slide relative to left of slider container
@@ -172,6 +173,7 @@
                   slider.direction = (slider.currentItem < target) ? "next" : "prev";
                   slider.flexAnimate(target, slider.vars.pauseOnAction, false, true, true);
                 }
+
               });
           }else{
               el._slider = slider;
@@ -458,6 +460,7 @@
 
             onTouchEnd = function(e) {
               // finish the touch by undoing the touch session
+              slider.play();
               el.removeEventListener('touchmove', onTouchMove, false);
 
               if (slider.animatingTo === slider.currentSlide && !scrolling && !(dx === null)) {
@@ -1115,7 +1118,7 @@
     thumbCaptions: false,           //Boolean: Whether or not to put captions on thumbnails when using the "thumbnails" controlNav.
 
     // Usability features
-    pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+    pauseOnAction: false,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
     pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
     pauseInvisible: true,   		//{NEW} Boolean: Pause the slideshow when tab is invisible, resume when visible. Provides better UX, lower CPU usage.
     useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available

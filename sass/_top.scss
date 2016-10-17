@@ -10,18 +10,27 @@
 }
 #top-content{
 	#main-visual{
-		background: #49b5e6;
 	}
-	.main-visual-inner{
-		max-width: 1282px;
+	.slider{
+		max-width: 1280px;
 		margin: 0 auto;
+		position: relative;
 		img{
 			width: 100%;
 		}
 	}
-	#sp-main-visual img{
-		width: 100%;
+	.slider-parts{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
 	}
+	#sp-main-visual {
+		img{
+			width: 100%;
+		}
+	}
+
 	h2{
 		text-align: center;
 		font-size: 32px;
@@ -56,17 +65,14 @@
 		}
 	}
 	.b-1{
-		background: #f0eee8;
+		// background: #f0eee8;
 		h2{
-			padding: 40px 0 25px;
+			padding: 110px 0 25px;
 			@media screen and (max-width: 767px) {
-				width: 87.5%;
-				margin: 0 auto;
-				padding: 25px 0 15px;
+				padding: 70px 0 15px;
+				font-size: $f16;
+				text-align: center;
 			}
-		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_01_pc.png);
 		}
 		.b-innerbox{
 			padding-top: 60px;
@@ -80,14 +86,14 @@
 		}
 		li{
 			float: left;
-			max-width: 250px;
+			max-width: 253px;
 			width: 23%;
 			img{
 				width: 100%;
 			}
 		}
 		li + li{
-			margin-left: 15.5%;
+			margin-left: 15.2%;
 		}
 		.b-1-text-01{
 			margin: 55px 0 20px;
@@ -114,24 +120,22 @@
 		}
 	}
 	.b-2{
+		background: #f2f2f2;
 		h2{
-			margin: 50px 0 30px;
+			padding: 50px 0 30px;
 			@media screen and (max-width: 767px) {
 				text-align: center;
 				font-size: $f16;
-				margin: 35px 0 25px;
+				padding: 35px 0 25px;
 			}
 		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_03_pc.png);
-		}
 		.b-innerbox{
-			margin: 45px auto 80px;
+			margin: 45px auto 0;
 			position: relative;
-			padding-bottom: 70px;
+			padding-bottom: 150px;
 			@media screen and (max-width: 767px) {
-				padding:0 10px 70px;
-				margin: 25px auto;
+				padding:0 10px 95px;
+				margin: 25px auto 0;
 			}
 		}
 		.left-box{
@@ -154,7 +158,7 @@
 			line-height: 1.6;
 			@media screen and (max-width: 767px) {
 				width: 54.6875%;
-				font-size: $f10;
+				font-size: $f11;
 				margin-left: 5%;
 			}
 		}
@@ -185,20 +189,20 @@
 				}
 			}
 		}
+		.top-detail-btn{
+			bottom: 80px;
+			@media screen and (max-width: 767px) {
+				bottom: 25px;
+			}
+		}
 	}
 	.b-3{
-		background: #34bbea;
+		background: url(/assets/img/diagonal_back.png);
 		h2{
 			padding: 50px 0 40px;
 			@media screen and (max-width: 767px) {
 				padding:25px 0 20px;
 				font-size: $f16;
-			}
-		}
-		.top-border-01{
-			border-color: #fff;
-			&:after{
-			content: url(/assets/img/arrow_02_pc.png);
 			}
 		}
 		.b-innerbox{
@@ -265,9 +269,6 @@
 				font-size: $f16;
 			}
 		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_03_pc.png);
-		}
 		.b-innerbox{
 			padding-top: 105px;
 			padding-bottom: 135px;
@@ -321,9 +322,6 @@
 				padding: 30px 0 25px;
 				font-size: $f16;
 			}
-		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_04_pc.png);
 		}
 		.b-innerbox{
 			padding-top: 80px;
@@ -403,9 +401,6 @@
 				font-size: $f16;	
 			}
 		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_03_pc.png);
-		}
 		.b-innerbox{
 			padding-top: 100px;
 			padding-bottom: 90px;
@@ -471,7 +466,7 @@
 				margin-left: 20px;
 				padding-left: 0;
 				margin-top: 15px;		
-				font-size: $f10;
+				font-size: $f12;
 				width: 87.5%;	
 			}
 		}
@@ -484,16 +479,13 @@
 		}
 	}
 	.b-7{
-		background: #f0eee8;
+		background: url(/assets/img/diagonal_back.png);
 		h2{
 			padding: 85px 0 30px;
 			@media screen and (max-width: 767px) {
 				padding:35px 0 25px;
 				font-size: $f16;
 			}
-		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_01_pc.png);
 		}
 		.b-innerbox{
 			height: 980px;
@@ -520,20 +512,20 @@
 			text-align: center;
 		}
 		.b-7-text-01{
-			top: 350px;
-		    left: 85px;
+			top: 360px;
+		    left: 115px;
 		}
 		.b-7-text-02{
-			top: 335px;
-		    right: 80px;
+			top: 340px;
+		    right: 115px;
 		}
 		.b-7-text-03{
-			top: 745px;
-		    left: 85px;
+			top: 685px;
+		    left: 120px;
 		}
 		.b-7-text-04{
-			top: 745px;
-		    right: 85px;
+			top: 685px;
+		    right: 120px;
 		}
 	}
 	.b-8{
@@ -543,9 +535,6 @@
 				padding: 40px 0 15px;
 				font-size: $f16;	
 			}
-		}
-		.top-border-01:after{
-			content: url(/assets/img/arrow_03_pc.png);
 		}
 		.b-innerbox{
 			padding-top: 65px;
@@ -558,7 +547,7 @@
 			text-align: center;
 			line-height: 1.6;
 			@media screen and (max-width: 767px) {
-				font-size: $f11;
+				font-size: $f12;
 				text-align: left;
 				span{
 					color: #0071bc;
