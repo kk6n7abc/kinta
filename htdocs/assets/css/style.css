@@ -92,11 +92,14 @@ header {
     float: right;
     width: 55%; }
     header .head-right-block .head-right-block-inner {
-      float: right; }
+      float: right;
+      display: table;
+      padding-top: 20px; }
     header .head-right-block ul {
-      margin-top: 25px;
-      display: inline-block;
-      min-width: 290px; }
+      display: table-cell;
+      min-width: 290px;
+      vertical-align: middle;
+      padding-right: 10px; }
       @media screen and (max-width: 1000px) {
         header .head-right-block ul {
           min-width: 220px; } }
@@ -113,7 +116,7 @@ header {
       padding-left: 3%;
       border-left: 1px solid #333; }
     header .head-right-block .contact-btn {
-      display: inline-block;
+      display: table-cell;
       max-width: 170px; }
       header .head-right-block .contact-btn a {
         display: block;
