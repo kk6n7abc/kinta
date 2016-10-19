@@ -165,13 +165,15 @@ header {
 footer {
   background: #0071bc;
   padding: 35px 0 30px; }
+  footer .footer-menu-box {
+    text-align: center; }
   footer ul {
     max-width: 600px;
     margin: 0 auto; }
     @media screen and (max-width: 767px) {
       footer ul {
-        width: 208px;
-        margin-bottom: -10px; } }
+        display: inline-block;
+        margin-bottom: -5px; } }
   footer li {
     float: left;
     max-width: 100px;
@@ -179,9 +181,10 @@ footer {
     @media screen and (max-width: 767px) {
       footer li {
         padding-right: 13px;
-        margin-bottom: 10px; }
-        footer li:nth-child(5) {
-          border-left: none; } }
+        margin-bottom: 10px;
+        margin-top: 10px; }
+        footer li:last-child {
+          padding-right: 0; } }
     footer li a {
       color: #fff; }
       @media screen and (max-width: 767px) {
@@ -330,10 +333,27 @@ footer {
 #top-content #sp-main-visual img {
   width: 100%; }
 
+#top-content .slide-text-box {
+  width: 25.5em;
+  margin: 45px auto 0;
+  font-size: 0.85714rem; }
+  #top-content .slide-text-box .slide-text-01 {
+    white-space: nowrap; }
+    #top-content .slide-text-box .slide-text-01 span {
+      font-weight: bold; }
+  #top-content .slide-text-box .slide-text-02 {
+    font-size: 1.14286rem;
+    font-weight: bold;
+    line-height: 2; }
+  #top-content .slide-text-box .slide-text-03 {
+    font-size: 0.78571rem;
+    line-height: 1.4; }
+
 #top-content h2 {
   text-align: center;
   font-size: 32px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.3em; }
 
 #top-content .top-detail-btn {
   position: absolute;
@@ -365,7 +385,7 @@ footer {
   padding: 110px 0 25px; }
   @media screen and (max-width: 767px) {
     #top-content .b-1 h2 {
-      padding: 70px 0 15px;
+      padding: 40px 0 15px;
       font-size: 1.14286rem;
       text-align: center; } }
 
@@ -393,7 +413,8 @@ footer {
   margin: 55px 0 20px;
   text-align: center;
   font-size: 32px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.3em; }
   @media screen and (max-width: 767px) {
     #top-content .b-1 .b-1-text-01 {
       margin: 20px 0 10px;
@@ -480,7 +501,12 @@ footer {
         bottom: 25px; } }
 
 #top-content .b-3 {
-  background: url(/assets/img/diagonal_back.png); }
+  background: url(/img/top_back_item_01.png), url(/assets/img/diagonal_back.png);
+  background-repeat: no-repeat,repeat;
+  background-position: 90% 10%,0 0; }
+  @media screen and (max-width: 767px) {
+    #top-content .b-3 {
+      background-size: 25%,auto; } }
   #top-content .b-3 h2 {
     padding: 50px 0 40px; }
     @media screen and (max-width: 767px) {

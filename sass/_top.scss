@@ -25,16 +25,34 @@
 		left: 0;
 		z-index: 1;
 	}
-	#sp-main-visual {
-		img{
-			width: 100%;
+	#sp-main-visual img{
+		width: 100%;
+	}
+	.slide-text-box{
+		width: 25.5em;
+		margin: 45px auto 0;
+		font-size: $f12;
+		.slide-text-01{
+			white-space: nowrap;
+			span{
+				font-weight: bold;
+			}
+		}
+		.slide-text-02 {
+			font-size: $f16;
+			font-weight: bold;
+			line-height: 2;
+		}
+		.slide-text-03 {
+			font-size: $f11;
+			line-height: 1.4;
 		}
 	}
-
 	h2{
 		text-align: center;
 		font-size: 32px;
 		font-weight: bold;
+		line-height: 1.3em;
 	}
 	.top-detail-btn{
 		position: absolute;
@@ -69,7 +87,7 @@
 		h2{
 			padding: 110px 0 25px;
 			@media screen and (max-width: 767px) {
-				padding: 70px 0 15px;
+				padding: 40px 0 15px;
 				font-size: $f16;
 				text-align: center;
 			}
@@ -100,6 +118,7 @@
 			text-align:center;
 			font-size: 32px;
 			font-weight: bold;
+			line-height: 1.3em;
 			@media screen and (max-width: 767px) {
 				margin: 20px 0 10px;
 				font-size: $f15;
@@ -197,7 +216,12 @@
 		}
 	}
 	.b-3{
-		background: url(/assets/img/diagonal_back.png);
+		background: url(/img/top_back_item_01.png),url(/assets/img/diagonal_back.png);
+		background-repeat: no-repeat,repeat;
+		background-position: 90% 10%,0 0;
+		@media screen and (max-width: 767px) {
+			background-size: 25%,auto;
+		}
 		h2{
 			padding: 50px 0 40px;
 			@media screen and (max-width: 767px) {
