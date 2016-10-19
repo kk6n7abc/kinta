@@ -1,0 +1,173 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.badge {
+  margin-left: 5px;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 8px;
+  border-radius: 5px;
+}
+
+.badge.red {
+  background-color: red;
+  color: white;
+}
+
+.badge.gray {
+  background-color: gray;
+  color: #fff;
+}
+.contact header * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+#contact h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.contact-table.table>tbody>tr>td,
+.contact-table.table>tbody>tr>th,
+.contact-table.table>tfoot>tr>td,
+.contact-table.table>tfoot>tr>th,
+.contact-table.table>thead>tr>td,
+.contact-table.table>thead>tr>th {
+  border: none;
+  color: #404040;
+}
+
+.contact-table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.contact-table th {
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.contact-table .control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-table textarea.control {
+  resize: vertical;
+  overflow: auto;
+  height: 100px;
+}
+
+.contact-table label {
+  font-weight: normal;
+}
+
+#contract-form .submit-btn {
+  background-color: #2fc178;
+  font-size: 24px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+#contract-form .confirm-btn {
+  background-color: #2fc178;
+  font-size: 24px;
+  display: block;
+  margin: 20px auto 0;
+  width: 50%;
+}
+
+#contract-form .back-btn {
+  background-color: gray;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  margin: 30px auto 0;
+  width: 50%;
+}
+
+a.send-btn {
+  background-color: #2fc178;
+  font-size: 24px;
+  display: block;
+  margin: 60px auto 0;
+  width: 50%;
+  color: #fff;
+}
+
+#contact .error_text {
+  color: red;
+  padding: 20px;
+}
+
+body.contact footer {
+  margin-top: 50px;
+}
+
+body.contact footer li {
+  max-width: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  .contact-table {
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  #contract-form .submit-btn,
+  #contract-form .confirm-btn,
+  #contract-form .back-btn,
+  a.send-btn {
+    width: 90%;
+  }
+
+  .xs-small-font {
+    font-size: 12px;
+  }
+
+  .xs-text-left {
+    text-align: left;
+  }
+
+  .xs-no-pd {
+    padding: 0;
+  }
+
+  .xs-send-text {
+    text-align: left;
+  }
+}
